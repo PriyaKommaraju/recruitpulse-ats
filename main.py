@@ -16,7 +16,8 @@ UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # 🔑 ADD YOUR GEMINI API KEY
-GEMINI_API_KEY = "AIzaSyDjf2cJS4p488XvX0J4ttbK3AM6rtCpQmI"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/"
